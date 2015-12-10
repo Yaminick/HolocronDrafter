@@ -42,12 +42,13 @@ namespace IsochronDrafter
         }
         public void DraftButtonEnabled(bool enabled)
         {
-            button2.Invoke(new MethodInvoker(delegate
+            buttonDraft.Invoke(new MethodInvoker(delegate
             {
-                button2.Enabled = enabled;
+                buttonDraft.Enabled = enabled;
             }));
         }
 
+        //Browse click event
         private void button3_Click(object sender, EventArgs e)
         {
             DialogResult result = openFileDialog1.ShowDialog();
@@ -57,6 +58,7 @@ namespace IsochronDrafter
             }
         }
 
+        //Launch click event
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox2.Text.Length == 0)
@@ -110,8 +112,8 @@ namespace IsochronDrafter
                 isochron.Default.RaresPerPack = textBox6.Text;
                 isochron.Default.MythicPercentage = textBox7.Text;
                 isochron.Default.Save();
-                button1.Enabled = false;
-                button3.Enabled = false;
+                buttonLaunch.Enabled = false;
+                buttonBrowse.Enabled = false;
                 textBox2.Enabled = false;
                 textBox3.Enabled = false;
                 textBox4.Enabled = false;
@@ -125,17 +127,28 @@ namespace IsochronDrafter
                 server.server.Close();
         }
 
+        //Start draft click event
         private void button2_Click(object sender, EventArgs e)
         {
             PrintLine("Starting draft with " + server.aliases.Count + " players.");
             server.StartNextPack();
-            button2.Enabled = false;
+            buttonDraft.Enabled = false;
         }
 
         protected override void OnClosed(EventArgs e)
         {
             base.OnClosed(e);
             Environment.Exit(0);
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ServerWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
