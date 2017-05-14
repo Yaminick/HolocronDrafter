@@ -9,7 +9,7 @@ install:
 
 script:
   - xbuild /p:Configuration=Release IsochronDrafter.sln
-  - mono ./testrunner/NUnit.Runners.3.6.1/tools/nunit-console.exe .IsochronDrafterTests2\bin\Release\IsochronDrafterTests2.dll
+  - mono .\packages\NUnit.ConsoleRunner.3.6.1\toolsnunit3-console.exe .\IsochronDrafterTests2\bin\Release\IsochronDrafterTests2.dll
   
 after_script:
   - coveralls
