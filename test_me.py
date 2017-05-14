@@ -11,3 +11,6 @@ def test_me(name, left, right):
                                                ['baz', 'z', 'z']])
 def test_me_next(name, left, right):
     assert left == right, name
+
+def test_me_later(name, left, right):
+    assert left == right, name
