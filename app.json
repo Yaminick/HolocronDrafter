@@ -1,0 +1,15 @@
+{
+  "name": "HolocronDrafter",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
