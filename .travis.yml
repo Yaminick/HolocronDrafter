@@ -1,6 +1,6 @@
 language: csharp
 solution: IsochronDrafter.sln
-#sudo: false
+sudo: false
 
 install:
   - pip install --user python-coveralls pytest
