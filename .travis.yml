@@ -1,10 +1,10 @@
 language: csharp
 solution: IsochronDrafter.sln
-sudo: false
-
+compiler:
+  - gcc
 before_install:
-  - pip install --user codecov
-
+  - pip install --user cpp-coveralls
+script:
+  - ./configure --enable-gcov && make && make check
 after_success:
-  #- codecov
-  - bash <(curl -s https://codecov.io/bash)
+  - coveralls --exclude lib --exclude tests --gcov-options '\-lp'
