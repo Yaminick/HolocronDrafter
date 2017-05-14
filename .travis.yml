@@ -3,10 +3,13 @@ solution: IsochronDrafter.sln
 sudo: false
 
 install:
-  - pip install --user coveralls pytest pytest-cov pyopenssl ndg-httpsclient pyasn1
+  - pip install --user coveralls
+  - nuget restore IsochronDrafter.sln
+  - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
 
 script:
-  - py.test
+  - xbuild /p:Configuration=Release IsochronDrafter.sln
+  - mono ./testrunner/NUnit.Runners.3.6.1/tools/nunit-console.exe .IsochronDrafterTests2\bin\Release\IsochronDrafterTests2.dll
   
 after_script:
   - coveralls
