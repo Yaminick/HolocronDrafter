@@ -5,8 +5,8 @@ sudo: false
 notifications:
     slack: dblockhq:qSfn6zRrJcTv2OOMV5LjKean
 
-addons:
-    srcclr: false
+#addons:
+    #srcclr: false
 
 install:
   - pip install --user coveralls pyopenssl ndg-httpsclient pyasn1
@@ -19,4 +19,4 @@ script:
   
 after_script:
   - coveralls
-
+  
