@@ -1,2 +1,8 @@
 language: csharp
 solution: IsochronDrafter.sln
+
+before_intall:
+  - pip install --user codecov
+
+after_success:
+  - codecov
