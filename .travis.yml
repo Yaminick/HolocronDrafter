@@ -8,5 +8,6 @@ install:
 script:
   - py.test --tb=short test_me.py
 
-after_success:
+after_script:
   - coveralls
+
