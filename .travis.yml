@@ -3,9 +3,11 @@ solution: IsochronDrafter.sln
 sudo: false
 notifications:
     slack: dblockhq:qSfn6zRrJcTv2OOMV5LjKean
-
+addons:
+    srcclr: true
+    
 install:
-  - pip install --user coveralls pyopenssl ndg-httpsclient pyans1
+  - pip install --user coveralls pyopenssl ndg-httpsclient pyasn1
   - nuget restore IsochronDrafter.sln
   - nuget install NUnit.Runners -Version 3.6.1 -OutputDirectory testrunner
 
