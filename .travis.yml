@@ -2,7 +2,11 @@ language: csharp
 solution: IsochronDrafter.sln
 sudo: false
 
-before_install:
-  - pip install --user cpp-coveralls 
+install:
+  - pip install coveralls
+
+script:
+  - py.test --tb=short test_me.py
+
 after_success:
-  - coveralls --exclude lib --exclude tests
+  - coveralls
