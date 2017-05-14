@@ -3,7 +3,7 @@ solution: IsochronDrafter.sln
 compiler:
   - gcc
 before_install:
-  - pip install --user cpp-coveralls
+  - pip install --user cpp-coveralls enable-gcov gcov-options
 script:
   - ./configure --enable-gcov && make && make check
 after_success:
