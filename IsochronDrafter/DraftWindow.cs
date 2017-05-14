@@ -75,6 +75,7 @@ namespace IsochronDrafter
             }
             catch (WebException ex)
             {
+                String exception_message = ex.Message;
                 MessageBox.Show("Couldn't find image for card " + cardName + " at URL " + httpWebRequest.RequestUri.ToString() + ".");
                 cardImages.Add(cardName, blankCard);
                 return;
