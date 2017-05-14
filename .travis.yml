@@ -2,6 +2,9 @@ language: csharp
 solution: IsochronDrafter.sln
 #sudo: false
 
+install:
+  - pip install --user python-coveralls pytest
+
 script:
   - py.test --tb=short test_me.py
 
