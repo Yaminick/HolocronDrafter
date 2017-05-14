@@ -28,79 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button button1;
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            button1 = new System.Windows.Forms.Button();
+            System.Windows.Forms.Button btnConnect;
+            this.txtServerAddress = new System.Windows.Forms.TextBox();
+            this.lblServerAddress = new System.Windows.Forms.Label();
+            this.txtUserAlias = new System.Windows.Forms.TextBox();
+            this.lblUserAlias = new System.Windows.Forms.Label();
+            this.btnStartServer = new System.Windows.Forms.Button();
+            btnConnect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // btnConnect
             // 
-            button1.Location = new System.Drawing.Point(55, 60);
-            button1.Name = "button1";
-            button1.Size = new System.Drawing.Size(129, 23);
-            button1.TabIndex = 2;
-            button1.Text = "Connect";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += new System.EventHandler(this.button1_Click);
+            btnConnect.Location = new System.Drawing.Point(55, 60);
+            btnConnect.Name = "btnConnect";
+            btnConnect.Size = new System.Drawing.Size(129, 23);
+            btnConnect.TabIndex = 2;
+            btnConnect.Text = "Connect";
+            btnConnect.UseVisualStyleBackColor = true;
+            btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
-            // textBox1
+            // txtServerAddress
             // 
-            this.textBox1.Location = new System.Drawing.Point(74, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(149, 20);
-            this.textBox1.TabIndex = 0;
+            this.txtServerAddress.Location = new System.Drawing.Point(74, 12);
+            this.txtServerAddress.Name = "txtServerAddress";
+            this.txtServerAddress.Size = new System.Drawing.Size(149, 20);
+            this.txtServerAddress.TabIndex = 0;
             // 
-            // label1
+            // lblServerAddress
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(14, 15);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Server:";
+            this.lblServerAddress.AutoSize = true;
+            this.lblServerAddress.Location = new System.Drawing.Point(14, 15);
+            this.lblServerAddress.Name = "lblServerAddress";
+            this.lblServerAddress.Size = new System.Drawing.Size(41, 13);
+            this.lblServerAddress.TabIndex = 1;
+            this.lblServerAddress.Text = "Server:";
             // 
-            // textBox2
+            // txtUserAlias
             // 
-            this.textBox2.Location = new System.Drawing.Point(74, 34);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(149, 20);
-            this.textBox2.TabIndex = 1;
+            this.txtUserAlias.Location = new System.Drawing.Point(74, 34);
+            this.txtUserAlias.Name = "txtUserAlias";
+            this.txtUserAlias.Size = new System.Drawing.Size(149, 20);
+            this.txtUserAlias.TabIndex = 1;
             // 
-            // label2
+            // lblUserAlias
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(14, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Alias:";
+            this.lblUserAlias.AutoSize = true;
+            this.lblUserAlias.Location = new System.Drawing.Point(14, 37);
+            this.lblUserAlias.Name = "lblUserAlias";
+            this.lblUserAlias.Size = new System.Drawing.Size(32, 13);
+            this.lblUserAlias.TabIndex = 1;
+            this.lblUserAlias.Text = "Alias:";
             // 
-            // button2
+            // btnStartServer
             // 
-            this.button2.Location = new System.Drawing.Point(55, 89);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(129, 23);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Start Server...";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnStartServer.Location = new System.Drawing.Point(55, 89);
+            this.btnStartServer.Name = "btnStartServer";
+            this.btnStartServer.Size = new System.Drawing.Size(129, 23);
+            this.btnStartServer.TabIndex = 3;
+            this.btnStartServer.Text = "Start Server...";
+            this.btnStartServer.UseVisualStyleBackColor = true;
+            this.btnStartServer.Click += new System.EventHandler(this.btnStartServer_Click);
             // 
             // ConnectWindow
             // 
-            this.AcceptButton = button1;
+            this.AcceptButton = btnConnect;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(239, 122);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(button1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnStartServer);
+            this.Controls.Add(btnConnect);
+            this.Controls.Add(this.lblUserAlias);
+            this.Controls.Add(this.txtUserAlias);
+            this.Controls.Add(this.lblServerAddress);
+            this.Controls.Add(this.txtServerAddress);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "ConnectWindow";
             this.ShowInTaskbar = false;
@@ -114,10 +114,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtServerAddress;
+        private System.Windows.Forms.Label lblServerAddress;
+        private System.Windows.Forms.TextBox txtUserAlias;
+        private System.Windows.Forms.Label lblUserAlias;
+        private System.Windows.Forms.Button btnStartServer;
     }
 }

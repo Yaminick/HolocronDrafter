@@ -28,229 +28,210 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonLaunch = new System.Windows.Forms.Button();
+            this.btnLaunchServer = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.buttonDraft = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.buttonBrowse = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.btnStartDraft = new System.Windows.Forms.Button();
+            this.txtServerLog = new System.Windows.Forms.TextBox();
+            this.lblSetFilePath = new System.Windows.Forms.Label();
+            this.lblImageFolderPath = new System.Windows.Forms.Label();
+            this.txtSetFilePath = new System.Windows.Forms.TextBox();
+            this.btnSetFileBrowse = new System.Windows.Forms.Button();
+            this.txtImageFolderPath = new System.Windows.Forms.TextBox();
+            this.lblCommonsCount = new System.Windows.Forms.Label();
+            this.txtCommonsCount = new System.Windows.Forms.TextBox();
+            this.lblUncommonsCount = new System.Windows.Forms.Label();
+            this.txtUncommonsCount = new System.Windows.Forms.TextBox();
+            this.lblRaresCount = new System.Windows.Forms.Label();
+            this.txtRaresCount = new System.Windows.Forms.TextBox();
+            this.lblMythicsPercent = new System.Windows.Forms.Label();
+            this.txtMythicsPercent = new System.Windows.Forms.TextBox();
+            this.lblPacksCount = new System.Windows.Forms.Label();
+            this.txtPacksCount = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // buttonLaunch
+            // btnLaunchServer
             // 
-            this.buttonLaunch.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.buttonLaunch.Location = new System.Drawing.Point(371, 588);
-            this.buttonLaunch.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonLaunch.Name = "buttonLaunch";
-            this.buttonLaunch.Size = new System.Drawing.Size(135, 28);
-            this.buttonLaunch.TabIndex = 3;
-            this.buttonLaunch.Text = "Launch Server";
-            this.buttonLaunch.UseVisualStyleBackColor = true;
-            this.buttonLaunch.Click += new System.EventHandler(this.button1_Click);
+            this.btnLaunchServer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnLaunchServer.Location = new System.Drawing.Point(278, 478);
+            this.btnLaunchServer.Name = "btnLaunchServer";
+            this.btnLaunchServer.Size = new System.Drawing.Size(101, 23);
+            this.btnLaunchServer.TabIndex = 3;
+            this.btnLaunchServer.Text = "Launch Server";
+            this.btnLaunchServer.UseVisualStyleBackColor = true;
+            this.btnLaunchServer.Click += new System.EventHandler(this.btnLaunchServer_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.Filter = "Isochron Drafter text files|*.txt";
             // 
-            // buttonDraft
+            // btnStartDraft
             // 
-            this.buttonDraft.Enabled = false;
-            this.buttonDraft.Location = new System.Drawing.Point(513, 588);
-            this.buttonDraft.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonDraft.Name = "buttonDraft";
-            this.buttonDraft.Size = new System.Drawing.Size(113, 28);
-            this.buttonDraft.TabIndex = 4;
-            this.buttonDraft.Text = "Start Draft";
-            this.buttonDraft.UseVisualStyleBackColor = true;
-            this.buttonDraft.Click += new System.EventHandler(this.button2_Click);
+            this.btnStartDraft.Enabled = false;
+            this.btnStartDraft.Location = new System.Drawing.Point(385, 478);
+            this.btnStartDraft.Name = "btnStartDraft";
+            this.btnStartDraft.Size = new System.Drawing.Size(85, 23);
+            this.btnStartDraft.TabIndex = 4;
+            this.btnStartDraft.Text = "Start Draft";
+            this.btnStartDraft.UseVisualStyleBackColor = true;
+            this.btnStartDraft.Click += new System.EventHandler(this.btnStartDraft_Click);
             // 
-            // textBox1
+            // txtServerLog
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox1.Location = new System.Drawing.Point(16, 15);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(965, 473);
-            this.textBox1.TabIndex = 0;
+            this.txtServerLog.BackColor = System.Drawing.SystemColors.Window;
+            this.txtServerLog.Location = new System.Drawing.Point(12, 12);
+            this.txtServerLog.Multiline = true;
+            this.txtServerLog.Name = "txtServerLog";
+            this.txtServerLog.ReadOnly = true;
+            this.txtServerLog.Size = new System.Drawing.Size(725, 385);
+            this.txtServerLog.TabIndex = 0;
             // 
-            // label1
+            // lblSetFilePath
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 497);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(59, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Set File:";
+            this.lblSetFilePath.AutoSize = true;
+            this.lblSetFilePath.Location = new System.Drawing.Point(51, 404);
+            this.lblSetFilePath.Name = "lblSetFilePath";
+            this.lblSetFilePath.Size = new System.Drawing.Size(45, 13);
+            this.lblSetFilePath.TabIndex = 3;
+            this.lblSetFilePath.Text = "Set File:";
             // 
-            // label2
+            // lblImageFolderPath
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(16, 528);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Image Directory:";
+            this.lblImageFolderPath.AutoSize = true;
+            this.lblImageFolderPath.Location = new System.Drawing.Point(12, 429);
+            this.lblImageFolderPath.Name = "lblImageFolderPath";
+            this.lblImageFolderPath.Size = new System.Drawing.Size(84, 13);
+            this.lblImageFolderPath.TabIndex = 4;
+            this.lblImageFolderPath.Text = "Image Directory:";
             // 
-            // textBox2
+            // txtSetFilePath
             // 
-            this.textBox2.Location = new System.Drawing.Point(136, 494);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(737, 22);
-            this.textBox2.TabIndex = 0;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtSetFilePath.Location = new System.Drawing.Point(102, 401);
+            this.txtSetFilePath.Name = "txtSetFilePath";
+            this.txtSetFilePath.Size = new System.Drawing.Size(554, 20);
+            this.txtSetFilePath.TabIndex = 0;
+            this.txtSetFilePath.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // buttonBrowse
+            // btnSetFileBrowse
             // 
-            this.buttonBrowse.Location = new System.Drawing.Point(883, 491);
-            this.buttonBrowse.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonBrowse.Name = "buttonBrowse";
-            this.buttonBrowse.Size = new System.Drawing.Size(100, 28);
-            this.buttonBrowse.TabIndex = 1;
-            this.buttonBrowse.Text = "Browse...";
-            this.buttonBrowse.UseVisualStyleBackColor = true;
-            this.buttonBrowse.Click += new System.EventHandler(this.button3_Click);
+            this.btnSetFileBrowse.Location = new System.Drawing.Point(662, 399);
+            this.btnSetFileBrowse.Name = "btnSetFileBrowse";
+            this.btnSetFileBrowse.Size = new System.Drawing.Size(75, 23);
+            this.btnSetFileBrowse.TabIndex = 1;
+            this.btnSetFileBrowse.Text = "Browse...";
+            this.btnSetFileBrowse.UseVisualStyleBackColor = true;
+            this.btnSetFileBrowse.Click += new System.EventHandler(this.btnSetFileBrowse_Click);
             // 
-            // textBox3
+            // txtImageFolderPath
             // 
-            this.textBox3.Location = new System.Drawing.Point(136, 524);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(737, 22);
-            this.textBox3.TabIndex = 2;
+            this.txtImageFolderPath.Location = new System.Drawing.Point(102, 426);
+            this.txtImageFolderPath.Name = "txtImageFolderPath";
+            this.txtImageFolderPath.Size = new System.Drawing.Size(554, 20);
+            this.txtImageFolderPath.TabIndex = 2;
             // 
-            // label3
+            // lblCommonsCount
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(247, 560);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Commons Per Pack:";
+            this.lblCommonsCount.AutoSize = true;
+            this.lblCommonsCount.Location = new System.Drawing.Point(185, 455);
+            this.lblCommonsCount.Name = "lblCommonsCount";
+            this.lblCommonsCount.Size = new System.Drawing.Size(103, 13);
+            this.lblCommonsCount.TabIndex = 5;
+            this.lblCommonsCount.Text = "Commons Per Pack:";
             // 
-            // textBox4
+            // txtCommonsCount
             // 
-            this.textBox4.Location = new System.Drawing.Point(392, 556);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(32, 22);
-            this.textBox4.TabIndex = 6;
+            this.txtCommonsCount.Location = new System.Drawing.Point(294, 452);
+            this.txtCommonsCount.Name = "txtCommonsCount";
+            this.txtCommonsCount.Size = new System.Drawing.Size(25, 20);
+            this.txtCommonsCount.TabIndex = 6;
             // 
-            // label4
+            // lblUncommonsCount
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(433, 560);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(90, 17);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Uncommons:";
+            this.lblUncommonsCount.AutoSize = true;
+            this.lblUncommonsCount.Location = new System.Drawing.Point(325, 455);
+            this.lblUncommonsCount.Name = "lblUncommonsCount";
+            this.lblUncommonsCount.Size = new System.Drawing.Size(69, 13);
+            this.lblUncommonsCount.TabIndex = 5;
+            this.lblUncommonsCount.Text = "Uncommons:";
             // 
-            // textBox5
+            // txtUncommonsCount
             // 
-            this.textBox5.Location = new System.Drawing.Point(533, 556);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(32, 22);
-            this.textBox5.TabIndex = 6;
+            this.txtUncommonsCount.Location = new System.Drawing.Point(400, 452);
+            this.txtUncommonsCount.Name = "txtUncommonsCount";
+            this.txtUncommonsCount.Size = new System.Drawing.Size(25, 20);
+            this.txtUncommonsCount.TabIndex = 6;
             // 
-            // label5
+            // lblRaresCount
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(575, 560);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(50, 17);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Rares:";
+            this.lblRaresCount.AutoSize = true;
+            this.lblRaresCount.Location = new System.Drawing.Point(431, 455);
+            this.lblRaresCount.Name = "lblRaresCount";
+            this.lblRaresCount.Size = new System.Drawing.Size(38, 13);
+            this.lblRaresCount.TabIndex = 5;
+            this.lblRaresCount.Text = "Rares:";
             // 
-            // textBox6
+            // txtRaresCount
             // 
-            this.textBox6.Location = new System.Drawing.Point(633, 556);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(32, 22);
-            this.textBox6.TabIndex = 6;
+            this.txtRaresCount.Location = new System.Drawing.Point(475, 452);
+            this.txtRaresCount.Name = "txtRaresCount";
+            this.txtRaresCount.Size = new System.Drawing.Size(25, 20);
+            this.txtRaresCount.TabIndex = 6;
             // 
-            // label6
+            // lblMythicsPercent
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(675, 560);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(129, 17);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Mythic Percentage:";
+            this.lblMythicsPercent.AutoSize = true;
+            this.lblMythicsPercent.Location = new System.Drawing.Point(506, 455);
+            this.lblMythicsPercent.Name = "lblMythicsPercent";
+            this.lblMythicsPercent.Size = new System.Drawing.Size(99, 13);
+            this.lblMythicsPercent.TabIndex = 5;
+            this.lblMythicsPercent.Text = "Mythic Percentage:";
             // 
-            // textBox7
+            // txtMythicsPercent
             // 
-            this.textBox7.Location = new System.Drawing.Point(804, 556);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(48, 22);
-            this.textBox7.TabIndex = 6;
+            this.txtMythicsPercent.Location = new System.Drawing.Point(603, 452);
+            this.txtMythicsPercent.Name = "txtMythicsPercent";
+            this.txtMythicsPercent.Size = new System.Drawing.Size(37, 20);
+            this.txtMythicsPercent.TabIndex = 6;
             // 
-            // label7
+            // lblPacksCount
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(144, 560);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 17);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Packs:";
+            this.lblPacksCount.AutoSize = true;
+            this.lblPacksCount.Location = new System.Drawing.Point(108, 455);
+            this.lblPacksCount.Name = "lblPacksCount";
+            this.lblPacksCount.Size = new System.Drawing.Size(40, 13);
+            this.lblPacksCount.TabIndex = 5;
+            this.lblPacksCount.Text = "Packs:";
             // 
-            // textBox8
+            // txtPacksCount
             // 
-            this.textBox8.Location = new System.Drawing.Point(205, 556);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(32, 22);
-            this.textBox8.TabIndex = 6;
+            this.txtPacksCount.Location = new System.Drawing.Point(154, 452);
+            this.txtPacksCount.Name = "txtPacksCount";
+            this.txtPacksCount.Size = new System.Drawing.Size(25, 20);
+            this.txtPacksCount.TabIndex = 6;
             // 
             // ServerWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 624);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.buttonBrowse);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.buttonDraft);
-            this.Controls.Add(this.buttonLaunch);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(749, 507);
+            this.Controls.Add(this.txtMythicsPercent);
+            this.Controls.Add(this.txtRaresCount);
+            this.Controls.Add(this.txtUncommonsCount);
+            this.Controls.Add(this.txtPacksCount);
+            this.Controls.Add(this.txtCommonsCount);
+            this.Controls.Add(this.lblMythicsPercent);
+            this.Controls.Add(this.lblRaresCount);
+            this.Controls.Add(this.lblPacksCount);
+            this.Controls.Add(this.lblUncommonsCount);
+            this.Controls.Add(this.lblCommonsCount);
+            this.Controls.Add(this.btnSetFileBrowse);
+            this.Controls.Add(this.txtImageFolderPath);
+            this.Controls.Add(this.txtSetFilePath);
+            this.Controls.Add(this.lblImageFolderPath);
+            this.Controls.Add(this.lblSetFilePath);
+            this.Controls.Add(this.btnStartDraft);
+            this.Controls.Add(this.btnLaunchServer);
+            this.Controls.Add(this.txtServerLog);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ServerWindow";
             this.Text = "Isochron Drafter Server";
             this.Load += new System.EventHandler(this.ServerWindow_Load);
@@ -261,24 +242,24 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonLaunch;
+        private System.Windows.Forms.Button btnLaunchServer;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button buttonDraft;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button buttonBrowse;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.Button btnStartDraft;
+        private System.Windows.Forms.TextBox txtServerLog;
+        private System.Windows.Forms.Label lblSetFilePath;
+        private System.Windows.Forms.Label lblImageFolderPath;
+        private System.Windows.Forms.TextBox txtSetFilePath;
+        private System.Windows.Forms.Button btnSetFileBrowse;
+        private System.Windows.Forms.TextBox txtImageFolderPath;
+        private System.Windows.Forms.Label lblCommonsCount;
+        private System.Windows.Forms.TextBox txtCommonsCount;
+        private System.Windows.Forms.Label lblUncommonsCount;
+        private System.Windows.Forms.TextBox txtUncommonsCount;
+        private System.Windows.Forms.Label lblRaresCount;
+        private System.Windows.Forms.TextBox txtRaresCount;
+        private System.Windows.Forms.Label lblMythicsPercent;
+        private System.Windows.Forms.TextBox txtMythicsPercent;
+        private System.Windows.Forms.Label lblPacksCount;
+        private System.Windows.Forms.TextBox txtPacksCount;
     }
 }

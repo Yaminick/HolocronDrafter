@@ -16,27 +16,27 @@ namespace IsochronDrafter
             this.Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath);
             InitializeComponent();
             MaximizeBox = false;
-            textBox1.Text = isochron.Default.HostName;
-            textBox2.Text = isochron.Default.Alias;
-            if (textBox1.Text.Length > 0)
-                ActiveControl = textBox2;
+            txtServerAddress.Text = isochron.Default.HostName;
+            txtUserAlias.Text = isochron.Default.Alias;
+            if (txtServerAddress.Text.Length > 0)
+                ActiveControl = txtUserAlias;
         }
 
         // Connect.
-        private void button1_Click(object sender, EventArgs e)
+        private void btnConnect_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text.Length == 0)
+            if (txtServerAddress.Text.Length == 0)
                 MessageBox.Show("You must enter a server.");
-            else if (textBox2.Text.Length == 0)
+            else if (txtUserAlias.Text.Length == 0)
                 MessageBox.Show("You must enter an alias.");
-            else if (textBox2.Text.Length > 16)
+            else if (txtUserAlias.Text.Length > 16)
                 MessageBox.Show("Please use an alias with sixteen or fewer characters.");
-            else if (textBox2.Text.Contains('|') || textBox2.Text.Contains(';'))
+            else if (txtUserAlias.Text.Contains('|') || txtUserAlias.Text.Contains(';'))
                 MessageBox.Show("Your alias contains disallowed characters.");
             else
             {
-                isochron.Default.HostName = textBox1.Text;
-                isochron.Default.Alias = textBox2.Text;
+                isochron.Default.HostName = txtServerAddress.Text;
+                isochron.Default.Alias = txtUserAlias.Text;
                 isochron.Default.Save();
                 DialogResult = System.Windows.Forms.DialogResult.OK;
                 this.Close();
@@ -44,7 +44,7 @@ namespace IsochronDrafter
         }
 
         // Start Server.
-        private void button2_Click(object sender, EventArgs e)
+        private void btnStartServer_Click(object sender, EventArgs e)
         {
             ServerWindow serverWindow = new ServerWindow();
             DialogResult = System.Windows.Forms.DialogResult.Abort;
@@ -55,12 +55,12 @@ namespace IsochronDrafter
 
         public string GetHostname()
         {
-            return textBox1.Text;
+            return txtServerAddress.Text;
         }
 
         public string GetAlias()
         {
-            return textBox2.Text;
+            return txtUserAlias.Text;
         }
     }
 }
