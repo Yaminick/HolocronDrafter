@@ -3,7 +3,7 @@ solution: IsochronDrafter.sln
 sudo: false
 
 install:
-  - pip install coveralls
+  - pip install python-coveralls pytest
 
 script:
   - py.test --tb=short test_me.py
