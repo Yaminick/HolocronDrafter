@@ -3,10 +3,10 @@ solution: IsochronDrafter.sln
 sudo: false
 
 install:
-  - pip install --user python-coveralls pytest pytest-cov pyopenssl ndg-httpsclient pyasn1
+  - pip install --user python-coveralls pytest pytest-cov pep8 pyopenssl ndg-httpsclient pyasn1
 
 script:
-  - py.test --cov=test_me.py --cov-report term-missing
+  - py.test test_me.py --doctest-modules --pep8 coveralls -v --cov coveralls --cov-report term-missing
 
 after_script:
   - coveralls
