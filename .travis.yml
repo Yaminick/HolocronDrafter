@@ -1,8 +1,10 @@
 language: csharp
 solution: IsochronDrafter.sln
+sudo: false
 
 before_install:
   - pip install --user codecov
 
 after_success:
-  - codecov
+  #- codecov
+  - bash <(curl -s https://codecov.io/bash)
