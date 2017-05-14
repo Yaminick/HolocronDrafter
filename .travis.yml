@@ -9,5 +9,5 @@ script:
   - py.test --tb=short test_me.py
 
 after_script:
-  - COVERALLS_REPO_TOKEN=iq911pPZN6fQFdzvFb9uTotdqfeoU4W4P coveralls
+  - coveralls
 
