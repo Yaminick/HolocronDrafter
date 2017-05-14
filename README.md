@@ -1,5 +1,7 @@
 Isochron Drafter
 ================
+[![Build Status](https://travis-ci.org/Yaminick/IsochronDrafter.svg?branch=master)](https://travis-ci.org/Yaminick/IsochronDrafter)
+[![codecov](https://codecov.io/gh/Yaminick/HolocronDrafter/branch/master/graph/badge.svg)](https://codecov.io/gh/Yaminick/HolocronDrafter)
 
 A hacked-together way to draft custom Magic: the Gathering sets online.
 
