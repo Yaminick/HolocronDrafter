@@ -1,6 +1,6 @@
 Isochron Drafter
 ================
-[![Build Status](https://travis-ci.org/Yaminick/IsochronDrafter.svg?branch=master)](https://travis-ci.org/Yaminick/IsochronDrafter)
+[![Build Status](https://travis-ci.org/Yaminick/HolocronDrafter.svg?branch=master)](https://travis-ci.org/Yaminick/HolocronDrafter)
 [![Coverage Status](https://coveralls.io/repos/github/Yaminick/HolocronDrafter/badge.svg?branch=master)](https://coveralls.io/github/Yaminick/HolocronDrafter?branch=master)
 [![Stories in Ready](https://badge.waffle.io/Yaminick/HolocronDrafter.svg?label=ready&title=Ready)](http://waffle.io/Yaminick/HolocronDrafter)
 
