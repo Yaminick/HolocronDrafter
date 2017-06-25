@@ -1,8 +1,9 @@
-Isochron Drafter
+Holocron Drafter
 ================
 [![Build Status](https://travis-ci.org/Yaminick/HolocronDrafter.svg?branch=master)](https://travis-ci.org/Yaminick/HolocronDrafter)
 [![Coverage Status](https://coveralls.io/repos/github/Yaminick/HolocronDrafter/badge.svg?branch=master)](https://coveralls.io/github/Yaminick/HolocronDrafter?branch=master)
 [![Stories in Ready](https://badge.waffle.io/Yaminick/HolocronDrafter.svg?label=ready&title=Ready)](http://waffle.io/Yaminick/HolocronDrafter)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/222126be13b445ba88d65d6becac3bc6)](https://www.codacy.com/app/Yaminick/HolocronDrafter?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Yaminick/HolocronDrafter&amp;utm_campaign=Badge_Grade)
 
 A hacked-together way to draft custom Magic: the Gathering sets online.
 
